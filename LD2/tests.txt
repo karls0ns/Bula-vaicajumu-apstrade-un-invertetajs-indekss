@@ -1,0 +1,92 @@
+
+GetPostings
+Bennet
+Postings: 1007 1011 1012 1027 1038 1042 1058
+husband
+Postings: 1002 1016 1055
+
+QueryAnd
+Bennet husband
+Results: empty
+
+TD-IDF
+Bennet husband
+Result: empty
+
+QueryOr
+Bennet husband
+Results: 1002 1007 1011 1012 1016 1027 1038 1042 1055 1058
+
+TD-IDF
+Bennet husband
+Result: 1042 1038 1058 1012 1016 1002 1011 1055 1007 1027
+
+GetPostings
+Lucas
+Postings: 1014
+
+QueryAnd
+Lucas
+Results: 1014
+
+TD-IDF
+Lucas
+Result: 1014
+
+QueryOr
+Lucas
+Results: 1014
+
+TD-IDF
+Lucas
+Result: 1014
+
+GetPostings
+room
+Postings: 1016 1019 1029 1049
+Darcy
+Postings: 1019 1024 1027 1035
+Hurst
+Postings: 1024
+
+QueryAnd
+room Darcy Hurst
+Results: empty
+
+TD-IDF
+room Darcy Hurst
+Result: empty
+
+QueryOr
+room Darcy Hurst
+Results: 1016 1019 1024 1027 1029 1035 1049
+
+TD-IDF
+room Darcy Hurst
+Result: 1024 1035 1019 1027 1016 1049 1029
+
+WildCard
+Eliza*
+Results:
+Elizabeth
+Postings: 1027 1035 1040
+Elizabeth,
+Postings: 1033
+
+WildCard
+*even
+Results:
+seven
+Postings: 1014
+
+WildCard
+invi*tion
+Results:
+invitation
+Postings: 1011
+
+WildCard
+w*n*w
+Results:
+window
+Postings: 1010
